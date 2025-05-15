@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sign Up</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>/* Center page */
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: #f5f7fa;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Form Styling */
+.signup-form {
+  background: #fff;
+  padding: 40px 30px;
+  border-radius: 12px;
+  box-shadow: 6px 6px 0px #000;
+  border: 2px solid #000;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  width: 300px;
+}
+
+/* Heading */
+.signup-form h2 {
+  margin: 0;
+  text-align: center;
+  font-size: 24px;
+  color: #333;
+}
+
+/* Inputs */
+.signup-form input {
+  height: 40px;
+  padding: 0 12px;
+  font-size: 15px;
+  border: 2px solid #000;
+  border-radius: 6px;
+  background-color: #fefefe;
+  box-shadow: 4px 4px 0 #000;
+  outline: none;
+  transition: all 0.2s ease;
+}
+
+.signup-form input:focus {
+  border-color: #2d8cf0;
+  box-shadow: 4px 4px 0 #2d8cf0;
+}
+
+/* Button */
+.signup-form button {
+  height: 40px;
+  background: #fce38a;
+  color: #000;
+  font-weight: 600;
+  border: 2px solid #000;
+  border-radius: 6px;
+  box-shadow: 4px 4px 0 #000;
+  cursor: pointer;
+  transition: transform 0.1s ease, box-shadow 0.1s ease;
+}
+
+.signup-form button:active {
+  transform: translate(2px, 2px);
+  box-shadow: 2px 2px 0 #000;
+}
+</style>
+</head>
+<body>
+  <form class="signup-form">
+    <h2>Sign Up</h2>
+    <input type="text" name="username" placeholder="Username" required />
+    <input type="email" name="email" placeholder="Email" required />
+    <input type="password" name="password" placeholder="Password" required />
+    <input type="password" name="confirm-password" placeholder="Confirm Password" required />
+    <button type="submit"onclick="onSignUp()">Let's Go →</button>
+  </form>
+  <script src="./signup.js"></script>
+</body>
+</html>

@@ -30,7 +30,7 @@ getData.innerHTML+=  `
 
     }
 })
-
+.catch(err=> console.log(err))
 
 function singleCard(id){
     window.location.href="./product.html?productdetail="+id
